@@ -1,0 +1,55 @@
+.signupForm {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+  font-weight: 600;
+}
+
+.Sform {
+  width: 450px;
+  background: #e9ebec;
+  padding: 30px;
+  /* border-radius: 25px; */
+  transform: scale(0.9);
+}
+
+.Sform img {
+  display: block;
+  width: 90px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.Sform Input {
+  padding: 8px;
+  background: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  border-radius: 0;
+}
+
+.Sform Button {
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+  border: 0 !important;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px !important;
+  width: 100%;
+  padding: 8px;
+  font-weight: 600;
+  border-radius: 0;
+}

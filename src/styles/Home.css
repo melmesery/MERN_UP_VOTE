@@ -1,0 +1,138 @@
+.home {
+  width: 100%;
+  margin: 0 auto;
+  font-weight: 600 !important;
+}
+
+.main-post-input {
+  border-radius: 0 !important;
+  font-weight: 600 !important;
+}
+
+.comment-form-input {
+  border-radius: 0 !important;
+}
+
+.posting {
+  transform: scale(0.9);
+  margin-top: -100px !important;
+  margin-bottom: -200px !important;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 15px;
+}
+
+.post-image {
+  display: block;
+  width: 100%;
+  transition: 2s;
+}
+
+.post-image:hover {
+  transform: scale(1.1);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 15px 0;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.post-icon {
+  width: 30px !important;
+  cursor: pointer;
+}
+
+.title-caption {
+  background: #e9ebec;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.home Button {
+  border-radius: 0 !important;
+  width: 100px;
+  border: none !important;
+  background: #000;
+  font-weight: 600 !important;
+}
+
+.small-profile {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  margin-top: -10px;
+}
+
+.left {
+  display: grid;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+}
+
+.right {
+  background: #e9ebec;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.modal-button {
+  width: 50px !important;
+  background: none !important;
+  padding: 0 !important;
+  font-size: 50px !important;
+}
+
+.modal-content {
+  border-radius: 0 !important;
+  border: none !important;
+  padding: 30px;
+  background: #e9ebec !important;
+}
+
+.modal-form Input {
+  display: block;
+  margin: 0 auto;
+  border-radius: 0 !important;
+  font-weight: 600 !important;
+}
+
+.modal-form button {
+  display: block;
+  width: 100px;
+  border-radius: 0 !important;
+  background: #de5361 !important;
+  border: none !important;
+  font-weight: 600 !important;
+}
+
+.comment-modal-button {
+  background: none !important;
+}
+
+.add-comment {
+  border: #fff solid 2px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
+
+.comment-profile {
+  width: 20px;
+  height: 20px;
+}
+
+.share-exp {
+ margin-top: 200px;
+}

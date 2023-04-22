@@ -1,0 +1,10 @@
+footer h4,
+span {
+  font-family: "Bad Script", cursive !important;
+  font-weight: 600;
+}
+
+footer a {
+  margin-top: 10px;
+  font-size: 12px !important;
+}
