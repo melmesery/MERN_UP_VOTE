@@ -16,8 +16,7 @@
 .Sform {
   width: 450px;
   background: #e9ebec;
-  padding: 30px;
-  /* border-radius: 25px; */
+  padding: 30px; 
   transform: scale(0.9);
 }
 

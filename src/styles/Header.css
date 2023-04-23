@@ -39,12 +39,3 @@ header button {
   height: 45px !important;
   border-radius: 50%;
 }
-
-/* @media only screen and (max-width: 576px) {
-  header {
-    width: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
-    position: static !important;
-  }
-} */

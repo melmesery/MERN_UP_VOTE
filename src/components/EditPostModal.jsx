@@ -14,7 +14,7 @@ function EditPostModal({ id, userPost }) {
     const formData = new FormData(e.target);
     try {
       const response = await axios.patch(
-        `http://localhost:5000/post/update/${id}`,
+        `https://up-vote-api.vercel.app/post/update/${id}`,
         formData,
         {
           headers: {
@@ -40,8 +40,7 @@ function EditPostModal({ id, userPost }) {
               id="exampleTitle"
               name="title"
               placeholder="Title"
-              type="text"
-              // defaultValue={title}
+              type="text" 
             />
           </FormGroup>
           <FormGroup>
@@ -49,8 +48,7 @@ function EditPostModal({ id, userPost }) {
               id="exampleCaption"
               name="caption"
               placeholder="Caption"
-              type="text"
-              // defaultValue={caption}
+              type="text" 
             />
           </FormGroup>
           <FormGroup>

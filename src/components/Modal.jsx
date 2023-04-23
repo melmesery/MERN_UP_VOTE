@@ -17,7 +17,7 @@ function ModalExample({ loadData }) {
     formData.append("title", title);
     formData.append("caption", caption);
     formData.append("image", image);
-    fetch("http://localhost:5000/post", {
+    fetch("https://up-vote-api.vercel.app/post", {
       method: "POST",
       headers: {
         authorization: `Believe__${localStorage.getItem("token")}`,

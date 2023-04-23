@@ -15,7 +15,7 @@ function CommentModal({ id, loadData }) {
 
     axios
       .post(
-        `http://localhost:5000/post/${id}/comment`,
+        `https://up-vote-api.vercel.app/post/${id}/comment`,
         { text },
         {
           headers: {

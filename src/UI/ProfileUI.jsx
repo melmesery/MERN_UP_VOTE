@@ -12,7 +12,7 @@ const ProfileUI = ({ data, userData }) => {
 
   const userPost = () => {
     axios
-      .get("http://localhost:5000/post/user", {
+      .get("https://up-vote-api.vercel.app/post/user", {
         headers: { authorization: `Believe__${localStorage.getItem("token")}` },
       })
       .then((response) => {
@@ -31,7 +31,7 @@ const ProfileUI = ({ data, userData }) => {
     try {
       if (window.confirm("You Are About To Delete A Post")) {
         const response = await axios.delete(
-          `http://localhost:5000/post/${id}`,
+          `https://up-vote-api.vercel.app/post/${id}`,
           {
             headers: {
               authorization: `Believe__${localStorage.getItem("token")}`,
@@ -56,7 +56,7 @@ const ProfileUI = ({ data, userData }) => {
         <div className="container-fluid">
           <div className="image-container">
             <img
-              src={`http://localhost:5000/${data.profilePic}`}
+              src={`https://up-vote-api.vercel.app/${data.profilePic}`}
               alt="API Image"
             />
           </div>
@@ -102,7 +102,7 @@ const ProfileUI = ({ data, userData }) => {
                     <section className="profile-projects">
                       <div className="project-container">
                         <img
-                          src={`http://localhost:5000/${post.image}`}
+                          src={`https://up-vote-api.vercel.app/${post.image}`}
                           className="proj shadow"
                         />
                       </div>

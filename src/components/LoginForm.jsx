@@ -15,7 +15,7 @@ const LoginForm = () => {
       toast.error("Data Required");
       return;
     } else {
-      fetch("http://localhost:5000/auth/login", {
+      fetch("https://up-vote-api.vercel.app/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -25,8 +25,7 @@ const LoginForm = () => {
         .then((response) => response.json())
         .then((data) => {
           if (data.message === "Done") {
-            localStorage.setItem("token", `${data.token}`);
-            // toast.success(`Welcome Back`);
+            localStorage.setItem("token", `${data.token}`); 
             setTimeout(() => navigate("/home"), 500);
           } else {
             toast.error(data.message);

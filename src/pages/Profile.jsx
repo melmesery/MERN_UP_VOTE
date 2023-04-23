@@ -10,7 +10,7 @@ const Profile = () => {
 
   const userData = () => {
     axios
-      .get("http://localhost:5000/user", {
+      .get("https://up-vote-api.vercel.app/user", {
         headers: { authorization: `Believe__${localStorage.getItem("token")}` },
       })
       .then((response) => {

@@ -9,7 +9,7 @@ const Home = () => {
   const [posts, setPosts] = useState([]);
 
   const loadData = () => {
-    fetch("http://localhost:5000/post", {
+    fetch("https://up-vote-api.vercel.app/post", {
       method: "GET",
     })
       .then((response) => response.json())

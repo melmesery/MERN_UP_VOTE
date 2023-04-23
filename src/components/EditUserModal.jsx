@@ -14,7 +14,7 @@ const EditUserModal = ({ userData, data }) => {
 
     try {
       const response = await axios.patch(
-        `http://localhost:5000/user/profile`,
+        `https://up-vote-api.vercel.app/user/profile`,
         formData,
         {
           headers: {

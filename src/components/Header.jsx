@@ -16,7 +16,7 @@ import ModalExample from "./Modal.jsx";
 const Header = ({ loadData }) => {
   const handleLogout = async () => {
     try {
-      const response = await fetch("http://localhost:5000/auth/logout", {
+      const response = await fetch("https://up-vote-api.vercel.app/auth/logout", {
         method: "PATCH",
         headers: {
           authorization: `Believe__${localStorage.getItem("token")}`,
@@ -36,7 +36,7 @@ const Header = ({ loadData }) => {
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:5000/user", {
+      .get("https://up-vote-api.vercel.app/user", {
         headers: { authorization: `Believe__${localStorage.getItem("token")}` },
       })
       .then((response) => {
@@ -63,7 +63,7 @@ const Header = ({ loadData }) => {
             </NavLink>
             <NavLink to="/profile">
               <img
-                src={`http://localhost:5000/${data.profilePic}`}
+                src={`https://up-vote-api.vercel.app/${data.profilePic}`}
                 alt="API Image"
                 className="header-profile"
               />

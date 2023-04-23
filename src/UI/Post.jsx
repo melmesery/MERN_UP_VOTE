@@ -12,7 +12,7 @@ const Post = ({ posts, loadData }) => {
   const likePost = (id) => {
     axios
       .patch(
-        `http://localhost:5000/post/${id}/like`,
+        `https://up-vote-api.vercel.app/post/${id}/like`,
         { like },
         {
           headers: {
@@ -32,7 +32,7 @@ const Post = ({ posts, loadData }) => {
   const disLikePost = (id) => {
     axios
       .patch(
-        `http://localhost:5000/post/${id}/dislike`,
+        `https://up-vote-api.vercel.app/post/${id}/dislike`,
         { disLike },
         {
           headers: {
@@ -65,7 +65,7 @@ const Post = ({ posts, loadData }) => {
                 <div className="col-sm-12 col-md-7 left">
                   <div className="post-image-con">
                     <img
-                      src={`http://localhost:5000/${post.Post.image}`}
+                      src={`https://up-vote-api.vercel.app/${post.Post.image}`}
                       className="post-image rounded-0"
                     />
                   </div>
@@ -81,7 +81,7 @@ const Post = ({ posts, loadData }) => {
                 <div className="col-sm-12 col-md-4 right">
                   <div className="d-flex gap-3 align-items-center border-light border-bottom">
                     <img
-                      src={`http://localhost:5000/${post.Post.userId.profilePic}`}
+                      src={`https://up-vote-api.vercel.app/${post.Post.userId.profilePic}`}
                       alt="API Image"
                       className="small-profile"
                     />
@@ -125,7 +125,7 @@ const Post = ({ posts, loadData }) => {
                       <div className="bg-white px-4 py-2 mb-3 rounded-5">
                         <div className="d-flex gap-2">
                           <img
-                            src={`http://localhost:5000/${comment.userId.profilePic}`}
+                            src={`https://up-vote-api.vercel.app/${comment.userId.profilePic}`}
                             className="comment-profile"
                           />
                           <h6 className="text-primary fw-bold">
