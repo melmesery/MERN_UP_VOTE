@@ -1,4 +1,5 @@
-{
+{ 
+  "homepage": "https://melmesery.github.io/MERN_UP_VOTE",
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
