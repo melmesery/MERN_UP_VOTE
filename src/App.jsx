@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
@@ -10,7 +10,7 @@ import Profile from "./pages/Profile.jsx";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <ToastContainer position="top-center" autoClose={1000} />
         <Routes>
           <Route path="/" element={<LoginForm />} />
@@ -18,7 +18,7 @@ function App() {
           <Route exact path="/home" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
